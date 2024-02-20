@@ -17,6 +17,7 @@ def main():
         name="increment_step_1",
         function=increment,
         function_return=["incremented_number"],
+        repo='https://github.com/Zarach/PipelineTest.git',
         execution_queue="default"
     )
 
@@ -26,6 +27,7 @@ def main():
         function=increment,
         function_kwargs=dict(i="${increment_step_1.incremented_number}"),
         function_return=["incremented_number"],
+        repo='https://github.com/Zarach/PipelineTest.git',
         execution_queue="default"
     )
     pipe.set_default_execution_queue("default")
