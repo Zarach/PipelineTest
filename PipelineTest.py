@@ -8,7 +8,7 @@ def main():
         version="0.0.0",
         auto_version_bump=True,
         abort_on_failure=True,
-        repo='https://github.com/Zarach/NeSy.git',
+        repo='https://github.com/Zarach/PipelineTest.git',
         packages="./requirements.txt",
         docker="nvidia/cuda:11.7.0-cudnn8-devel-ubuntu22.04"
     )
